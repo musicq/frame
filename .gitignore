@@ -1,0 +1,15 @@
+.DS_Store
+
+# ide
+.idea
+
+# log files
+*.log
+
+node_modules
+
+# test coverage report
+coverage
+
+# build
+dist
