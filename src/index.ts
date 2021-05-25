@@ -233,7 +233,7 @@ function updateChildren(parentEl: Node, oldCh: Children, ch: Children) {
       patchVnode(oldStartVNode as VNode, newEndVNode as VNode)
       parentEl.insertBefore(
         (oldStartVNode as VNode).el!,
-        (oldStartVNode as VNode).el!.nextSibling,
+        (oldEndVNode as VNode).el!.nextSibling,
       )
       oldStartVNode = oldCh![++oldStartIdx]
       newEndVNode = ch![--newEndIdx]
